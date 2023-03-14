@@ -49,7 +49,7 @@ public class Navbar {
                 case 3:
                     if (newstd.length==0){
                     newstd = students;
-                    }
+                    };
                     System.out.println("Input number of oder !");
                     int numberStd = Integer.parseInt(sc.nextLine());
                     if (numberStd > newstd.length || numberStd <= 0) {
@@ -91,7 +91,10 @@ public class Navbar {
                     System.out.println(Arrays.toString(newstd));
                     break;
                 case 5:
-                newstd = students;
+
+                    if (newstd.length==0){
+                        newstd = students;
+                    };
 
                     for (int i = 0; i < newstd.length; i++) {
                         for (int j = 0; j <newstd.length ; j++) {
