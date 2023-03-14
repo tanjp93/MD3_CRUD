@@ -43,10 +43,13 @@ public class Navbar {
                     int stdAge = Integer.parseInt(sc.nextLine());
 
                     newstd[newstd.length - 1] = new Student(stdId, stdName, stdAge);
+
                     System.out.println(Arrays.toString(newstd));
                     break;
                 case 3:
+                    if (newstd.length==0){
                     newstd = students;
+                    }
                     System.out.println("Input number of oder !");
                     int numberStd = Integer.parseInt(sc.nextLine());
                     if (numberStd > newstd.length || numberStd <= 0) {
