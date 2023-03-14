@@ -45,6 +45,7 @@ public class Navbar {
                     newstd[newstd.length - 1] = new Student(stdId, stdName, stdAge);
 
                     System.out.println(Arrays.toString(newstd));
+                    students=newstd;
                     break;
                 case 3:
                     if (newstd.length==0){
@@ -68,6 +69,7 @@ public class Navbar {
                         }
                     }
                     System.out.println(Arrays.toString(newstd));
+                    students=newstd;
                     break;
                 case 4:
                     newstd = new Student[students.length - 1];
@@ -89,9 +91,9 @@ public class Navbar {
                         }
                     }
                     System.out.println(Arrays.toString(newstd));
+                    students=newstd;
                     break;
                 case 5:
-
                     if (newstd.length==0){
                         newstd = students;
                     };
@@ -106,6 +108,7 @@ public class Navbar {
                         }
                     }
                     System.out.println(Arrays.toString(newstd));
+                    students=newstd;
                     break;
                 case 6:
                     System.exit(0);
